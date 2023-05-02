@@ -1,0 +1,563 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my css reset  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* common css */
+
+body {
+  line-height: 1.5;
+  word-spacing: 1.7;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.nav li,
+.icon li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+.call,
+.iso {
+  font-size: 20px;
+}
+.padding {
+  padding: 40px 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #ffffff;
+}
+/* header */
+.header {
+  background: radial-gradient(#ffffff, #f1f2f1);
+  box-shadow: 0 1px 1px 2px #bbbbbb;
+}
+.nevigation {
+  text-align: right;
+  padding-bottom: 0;
+}
+.fac,
+.twi,
+.mail {
+  font-size: 24px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: #5c606a;
+}
+.iso {
+  color: #bbbbbb;
+}
+.call {
+  color: #275b12;
+}
+.fac:hover {
+  color: #4267b2;
+}
+.twi:hover {
+  color: #39a2f2;
+}
+.mail:hover {
+  color: #c23a2b;
+}
+.nav a {
+  color: #5c606a;
+  font-size: 22px;
+  padding-left: 24px;
+}
+.nav a:hover {
+  color: #88ac30;
+}
+.active a {
+  color: #88ac30;
+}
+.top-border {
+  border-top: 3px solid #9ec438;
+}
+.header-padding {
+  padding-top: 8px;
+}
+
+/******* about section *****/
+
+.form {
+  background: linear-gradient(to bottom, #e66e36, #e56e35);
+  color: #ffffff;
+}
+
+.about-col {
+  margin-left: 16px;
+  width: 33%;
+  padding: 0 24px;
+}
+.image {
+  margin-right: 12px;
+  width: 60%;
+}
+img {
+  width: 100%;
+}
+.lable {
+  margin-right: 24px;
+}
+.select,
+.input {
+  width: 58%;
+  outline: none;
+  border: 1px solid rgb(221, 215, 215);
+}
+
+.form h2 {
+  font-size: 24px;
+  padding: 10px 3px;
+}
+.input-padding {
+  padding-top: 12px;
+}
+.about-col p {
+  font-size: 20px;
+  color: #555555;
+  text-align: center;
+}
+.btn {
+  padding: 10px 24px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #a0c249;
+  letter-spacing: 1.3px;
+  outline: 0;
+  border: 2px solid #459838;
+  margin: 24px 0 0 32px;
+  border-radius: 6px;
+}
+
+/* contact section */
+
+.contact {
+  background: #363636;
+  color: #ffffff;
+}
+.contact-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+.icon-circle a {
+  color: #ffffff;
+  font-size: 32px;
+}
+.circle-color-1 {
+  background: #2b81c7;
+}
+.circle-color-2 {
+  background: #b82925;
+}
+.circle-color-3 {
+  background: #f3953d;
+}
+.contact h2 {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* inffo section */
+.inffo {
+  color: #5c606b;
+}
+.travels-inffo {
+  width: 64%;
+}
+.news {
+  width: 30%;
+}
+.inffo h3 {
+  font-size: 24px;
+}
+.inffo h3,
+.travels-inffo p {
+  margin-bottom: 12px;
+}
+.travels-inffo p {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+}
+.news p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: #39a2f2;
+}
+
+/* footer section */
+.footer {
+  background: #363636;
+}
+.col-4 {
+  width: 22%;
+}
+.footer h4 {
+  color: #ffffff;
+  font-size: 26px;
+}
+.footer a {
+  padding-left: 8px;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+.right-icon {
+  color: #5c606b;
+  margin-bottom: 16px;
+  margin-top: 18px;
+}
+.footer-icon {
+  margin-left: 12px;
+  color: #f2f2f2;
+}
+.list-style li {
+  border-bottom: 1px solid #444444;
+}
+.list-style a:hover {
+  text-decoration: underline;
+}
+.footer-icon:hover {
+  text-decoration: underline;
+}
+/* copyright */
+
+.copyright {
+  background: #000000;
+  color: #f1f2f1;
+}
+.copyright a {
+  color: #459838;
+}
+.copyright-padding {
+  padding: 24px;
+}
+
+/* media resposive */
+
+@media all and (max-width: 780px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .about-col {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+  }
+  .image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .flex {
+    display: block;
+  }
+  .input-padding {
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .btn {
+    margin: 12px;
+  }
+  .contact-flex {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .icon-circle {
+    margin: 0;
+  }
+  .contact h2 {
+    text-align: inherit;
+  }
+  .travels-inffo {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+  }
+  .footer {
+    text-align: center;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+
+/*********************************/
+/* tour package page */
+/*********************************/
+
+/* tour-heading */
+
+.tour-heading {
+  padding: 5px;
+  color: #737988;
+}
+.tour-heading p {
+  font-size: 16px;
+}
+.tour-heading h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.tour-place {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tour-place-img {
+  width: 30%;
+  padding-bottom: 38px;
+}
+.tour-img {
+  border: 1px solid #a5a6a7;
+  border-radius: 4px;
+}
+.tour-place-img h4 {
+  font-size: 20px;
+  color: #555555;
+  font-weight: 500;
+}
+.btn-tour {
+  background: #a0c249;
+  font-size: 14px;
+  padding: 4px 8px;
+  border: 1px solid #a5a6a7;
+  border-radius: 3px;
+}
+
+/* media resposive tour and package */
+
+@media all and (max-width: 780px) {
+  .tour-place-img {
+    width: 100%;
+  }
+}
+
+/**************************/
+/* aboutpage */
+/**************************/
+
+.about-article-img {
+  float: left;
+  width: 200px;
+  margin-right: 32px;
+}
+.about-article {
+  padding-top: 24px;
+  width: 65%;
+}
+.aboutpage {
+  padding: 24px 0;
+}
+.aboutpage h2 {
+  padding-left: 24px;
+}
+.about-article p {
+  color: #5c606b;
+  font-size: 18px;
+}
+.icon-circle-about {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.icon-circle-about a {
+  font-size: 32px;
+}
+.about-diaplay {
+  display: flex;
+}
+.about-right a {
+  padding-top: 14px;
+  font-size: 20px;
+}
+.about-right {
+  display: flex;
+}
+.about-color {
+  color: #2b81c7;
+}
+.about-color-2 {
+  color: #b82925;
+}
+.about-color-3 {
+  color: #f3953d;
+}
+.about-color:hover,
+.about-color-2:hover,
+.about-color-3 :hover {
+  color: #df78df;
+}
+
+/* aboutpage responsive*/
+
+@media all and (max-width: 780px) {
+  .about-contact {
+    width: 100%;
+  }
+  .about-article {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  .about-diaplay {
+    margin-bottom: 12px;
+  }
+}
